@@ -1,0 +1,19 @@
+[package]
+name = "rust-cli-example"
+version = "0.1.0"
+authors = ["oxinosg <oxinosg@gmail.com>"]
+edition = "2018"
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = false
+codegen-units = 1
+panic = "abort"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+structopt = "0.3"
+serde = "1.0.102"
+serde_json = "1.0"
